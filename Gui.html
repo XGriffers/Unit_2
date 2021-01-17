@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--This only works with Internet explorer, I was Using Atom IDE running the atom-live-server extension. Also noteworthy
+is connect to SMSS through Sql Authentication under a newly created User login.-->
+<html>
+    <title>
+        Unit 2 Assignment
+    </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="Controller.js"></script>
+  <head>
+        <div class="headerSection">
+            <h1>Unit 2 Assignment</h1>
+            <h1>IT-481</h1>
+            <h1>Steve Griffith</h1>
+            <h1>Date</h1>
+        </div>
+  </head>
+
+      <div class= "input">
+
+          <input type="password" id="password" placeholder="Password" autocomplete="false">
+
+      </div>
+
+        <div class="container">
+            <button class="buttons" id="Connect" onclick="Connect('sa', password.value)">Connect to Database</button>
+            <button class="buttons" id="CountRecords" onclick="CountRecords('sa', password.value)">Count Records</button>
+            <button class="buttons" id="ShowNames" onclick="ShowNames('sa', password.value)">Show Names</button>
+
+    </div>
+
+</html>
